@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Talentrix Agency - Вакансія</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap');
+
+  /* Загальні стилі */
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #0a0a0a, #1c1c1c);
+    color: #f0e6d2;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    background: linear-gradient(145deg, #222, #111);
+    padding: 50px 60px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.8);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Легка анімація появи */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .container > * {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  .container > *:nth-child(1) { animation-delay: 0.1s; }
+  .container > *:nth-child(2) { animation-delay: 0.3s; }
+  .container > *:nth-child(3) { animation-delay: 0.5s; }
+  .container > *:nth-child(4) { animation-delay: 0.7s; }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    user-select: none;
+  }
+
+  p.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+    font-style: italic;
+    color: #d4af37;
+    letter-spacing: 1.3px;
+    user-select: none;
+  }
+
+  p.description {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    margin-bottom: 55px;
+    color: #e0d8c3;
+    user-select: text;
+  }
+
+  .btn-telegram {
+    background: linear-gradient(45deg, #0088cc, #005f99);
+    color: white;
+    text-decoration: none;
+    padding: 18px 45px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    box-shadow: 0 8px 24px rgba(0, 136, 204, 0.75);
+    transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    user-select: none;
+  }
+
+  .btn-telegram:hover,
+  .btn-telegram:focus {
+    background: linear-gradient(45deg, #005f99, #0088cc);
+    box-shadow: 0 14px 40px rgba(0, 136, 204, 1);
+    transform: scale(1.05);
+    outline: none;
+  }
+
+  .telegram-icon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    transition: transform 0.3s ease;
+  }
+
+  .btn-telegram:hover .telegram-icon {
+    transform: rotate(20deg);
+  }
+
+  /* Адаптивність */
+  @media (max-width: 600px) {
+    .container {
+      padding: 40px 30px;
+      max-width: 90vw;
+    }
+    h1 {
+      font-size: 2.8rem;
+      letter-spacing: 2.5px;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+    }
+    p.description {
+      font-size: 1rem;
+      margin-bottom: 40px;
+    }
+    .btn-telegram {
+      padding: 14px 30px;
+      font-size: 1rem;
+      gap: 10px;
+    }
+    .telegram-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Пропозиція роботи Talentrix Agency">
+    <h1>Talentrix Agency</h1>
+    <p class="subtitle">Шукаємо менеджера по роботі з клієнтами</p>
+    <p class="description">
+      Приєднуйся до команди Talentrix Agency — агенції, що створює майбутнє бізнесу з класом і стилем.<br>  
+      Ми цінуємо амбіції, професіоналізм і прагнення до досконалості.<br>
+      Ваша роль — будувати міцні відносини з клієнтами, забезпечуючи найвищий рівень сервісу.<br>
+      Пропонуємо комфортні умови, гідну оплату та можливість кар’єрного росту у престижному середовищі.
+    </p>
+    <a href="https://t.me/Roman_K_r" target="_blank" class="btn-telegram" rel="noopener noreferrer" aria-label="Написати в Telegram">
+      <svg class="telegram-icon" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0zm58.9 84.6l-24.8 117.4c-1.9 8.2-7.1 10.3-14.3 6.4l-39.5-29.1-19.1 18.4c-2.1 2.1-3.8 3.8-7 3.8l2.5-35.4 64.4-58.3c2.8-2.5-.6-3.9-4.3-1.4l-79.6 50.2-34.2-10.7c-7.4-2.3-7.5-7.4 1.5-10.9l132.3-51c6.1-2.3 11.4 1.4 9.4 10.3z"/></svg>
+      Написати в Telegram
+    </a>
+  </div>
+</body>
+</html>
